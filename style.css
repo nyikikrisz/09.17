@@ -1,0 +1,237 @@
+/* ============================================================
+   Kovács Anna bemutatkozó oldala – stíluslap
+   Ismétlés: szelektorok, box model, színek, betűk
+   ============================================================ */
+
+/* Minden elem így számolja a méretét: a padding és a border
+   beleszámít a megadott szélességbe. */
+* {
+  box-sizing: border-box;
+}
+
+/* --- Az egész oldal alapbeállításai --- */
+body {
+  margin: 0;
+  background-image: linear-gradient(rgb(81, 146, 132), rgb(247, 248, 247));         /* halvány, meleg háttér */
+  color: #000000;                     /* alap szövegszín */
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* ============================================================
+   FEJLÉC
+   ============================================================ */
+.fejlec {
+  background-color: #4d9284;          /* nyugodt zöldes-kék */
+  color: #000000;
+  padding: 40px 20px 32px;            /* fent 40, oldalt 20, lent 32 */
+  text-align: center;
+}
+
+.profilkep {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #ffffff;
+  border-radius: 50%;                 /* 50% = kör alakú kép */
+  margin-bottom: 14px;
+}
+
+.fejlec h1 {
+  margin: 0 0 6px;
+  font-size: 34px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.motto {
+  margin: 0;
+  color: #d6e6e1;
+  font-size: 17px;
+  font-style: italic;
+}
+
+/* ============================================================
+   MENÜ
+   ============================================================ */
+.menu {
+  background-color: #3c655d;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+/* Leszármazott szelektor: csak a menün belüli hivatkozásokra */
+.menu a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 14px;
+  margin: 2px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.menu a:hover {
+  background-color: #57897f;          /* egérrel fölé húzva */
+}
+
+/* ============================================================
+   TARTALOM – középre igazított sáv
+   ============================================================ */
+.tartalom {
+  width: 90%;
+  max-width: 860px;
+  margin: 30px auto;                  /* auto = vízszintesen középre */
+}
+
+/* --- Fehér doboz: ebben látszik jól a box model --- */
+.doboz {
+  background-color: #00000050;
+  border: 1px solid #e0dcd300;
+  border-left: 6px solid #4a7c7200;     /* színes csík a bal oldalon */
+  border-radius: 10px;
+  padding: 24px 28px;
+  margin-bottom: 26px;
+}
+
+/* Kiemelt doboz: ugyanaz, csak más színekkel */
+.kiemelt {
+  background-color: #00000050;
+  border-left-color: #22dbdb;
+}
+
+h2 {
+  margin: 0 0 12px;
+  color: #40b8a4;
+  font-size: 25px;
+}
+
+h3 {
+  margin: 12px 0 6px;
+  color: #3c655d;
+  font-size: 19px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Szövegformázás */
+strong {
+  color: #2f5952;
+}
+
+.halvany {
+  color: #00a799;
+  font-size: 15px;
+}
+
+.kozepre {
+  text-align: center;
+}
+
+.idezet {
+  border-left: 4px solid #528a7f;
+  background-color: #faf6f0;
+  padding: 12px 18px;
+  margin: 16px 0 0;
+  font-style: italic;
+  color: #5c554a;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e2ddd3;
+  margin: 20px 0;
+}
+
+/* --- Listák --- */
+.lista {
+  margin: 10px 0;
+  padding-left: 24px;
+  
+}
+
+.lista li {
+  margin-bottom: 7px;
+}
+
+/* --- Hivatkozások a szövegben --- */
+a {
+  color: #46ffdd;
+}
+
+a:hover {
+  color: #3e9281;
+}
+
+/* ============================================================
+   KÉPKÁRTYÁK – három doboz egymás mellett
+   ============================================================ */
+.kartyak {
+  text-align: center;                 /* középre húzza a kártyákat */
+  margin-bottom: 26px;
+}
+
+/* inline-block: egymás mellé kerülnek, de méretezhetők */
+.kartya {
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
+  text-align: left;
+  background-color: #00000050;
+  border: 1px solid #e0dcd300;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 8px 6px;
+  height: 400px;
+}
+
+.kartya img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.kartya p {
+  font-size: 15px;
+  color: #5c554a;
+}
+
+/* ============================================================
+   GOMB (valójában egy hivatkozás)
+   ============================================================ */
+.gomb {
+  display: inline-block;
+  background-color: #4a7c72;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 11px 22px;
+  border-radius: 8px;
+  margin-top: 6px;
+}
+
+.gomb:hover {
+  background-color: #3c655d;
+  color: #ffffff;
+}
+
+/* ============================================================
+    LÁBLÉC
+   ============================================================ */
+.lablec {
+  background-color: #3c655d;
+  color: #d6e6e1;
+  text-align: center;
+  padding: 22px 20px;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.lablec a {
+  color: #ffffff;
+}
+
+.apro {
+  font-size: 13px;
+  color: #5dccb0;
+}

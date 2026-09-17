@@ -12,7 +12,7 @@
 /* --- Az egész oldal alapbeállításai --- */
 body {
   margin: 0;
-  background-image: linear-gradient(rgb(81, 146, 132), rgb(247, 248, 247));         /* halvány, meleg háttér */
+  background-image: linear-gradient(rgb(146, 136, 81), rgb(247, 248, 247));         /* halvány, meleg háttér */
   color: #000000;                     /* alap szövegszín */
   font-family: "Segoe UI", Arial, sans-serif;
   font-size: 17px;
@@ -23,7 +23,7 @@ body {
    FEJLÉC
    ============================================================ */
 .fejlec {
-  background-color: #4d9284;          /* nyugodt zöldes-kék */
+  background-color: #c0852e;          /* nyugodt zöldes-kék */
   color: #000000;
   padding: 40px 20px 32px;            /* fent 40, oldalt 20, lent 32 */
   text-align: center;
@@ -55,7 +55,7 @@ body {
    MENÜ
    ============================================================ */
 .menu {
-  background-color: #3c655d;
+  background-color: #655a3c;
   padding: 12px 20px;
   text-align: center;
 }
@@ -72,7 +72,8 @@ body {
 }
 
 .menu a:hover {
-  background-color: #57897f;          /* egérrel fölé húzva */
+  background-color: #897957;          /* egérrel fölé húzva */
+  color: #000000;
 }
 
 /* ============================================================
@@ -97,18 +98,18 @@ body {
 /* Kiemelt doboz: ugyanaz, csak más színekkel */
 .kiemelt {
   background-color: #00000050;
-  border-left-color: #22dbdb;
+  border-left-color: #db9a22;
 }
 
 h2 {
   margin: 0 0 12px;
-  color: #40b8a4;
+  color: #b89c40;
   font-size: 25px;
 }
 
 h3 {
   margin: 12px 0 6px;
-  color: #3c655d;
+  color: #65623c;
   font-size: 19px;
 }
 
@@ -118,11 +119,11 @@ p {
 
 /* Szövegformázás */
 strong {
-  color: #2f5952;
+  color: #59552f;
 }
 
 .halvany {
-  color: #00a799;
+  color: #a77a00;
   font-size: 15px;
 }
 
@@ -131,7 +132,7 @@ strong {
 }
 
 .idezet {
-  border-left: 4px solid #528a7f;
+  border-left: 4px solid #8a7b52;
   background-color: #faf6f0;
   padding: 12px 18px;
   margin: 16px 0 0;
@@ -158,11 +159,11 @@ hr {
 
 /* --- Hivatkozások a szövegben --- */
 a {
-  color: #46ffdd;
+  color: #ffdd46;
 }
 
 a:hover {
-  color: #3e9281;
+  color: #928a3e;
 }
 
 /* ============================================================
@@ -202,7 +203,7 @@ a:hover {
    ============================================================ */
 .gomb {
   display: inline-block;
-  background-color: #4a7c72;
+  background-color: #7c734a;
   color: #ffffff;
   text-decoration: none;
   padding: 11px 22px;
@@ -211,7 +212,7 @@ a:hover {
 }
 
 .gomb:hover {
-  background-color: #3c655d;
+  background-color: #655a3c;
   color: #ffffff;
 }
 
@@ -219,7 +220,7 @@ a:hover {
     LÁBLÉC
    ============================================================ */
 .lablec {
-  background-color: #3c655d;
+  background-color: #655a3c;
   color: #d6e6e1;
   text-align: center;
   padding: 22px 20px;
@@ -233,5 +234,5 @@ a:hover {
 
 .apro {
   font-size: 13px;
-  color: #5dccb0;
+  color: #ccb25d;
 }
